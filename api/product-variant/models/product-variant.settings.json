@@ -15,8 +15,8 @@
       "type": "string"
     },
     "product": {
-      "model": "product",
-      "via": "product_variants"
+      "via": "product_variants",
+      "model": "product"
     },
     "slug": {
       "type": "uid"
