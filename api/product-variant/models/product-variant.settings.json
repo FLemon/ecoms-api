@@ -27,6 +27,10 @@
     "stock": {
       "via": "product_variants",
       "model": "stock"
+    },
+    "variants": {
+      "via": "product_variant",
+      "collection": "variant"
     }
   }
 }
