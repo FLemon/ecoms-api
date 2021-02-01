@@ -11,12 +11,9 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string"
-    },
     "product_variant": {
-      "via": "variants",
-      "model": "product-variant"
+      "model": "product-variant",
+      "via": "variants"
     },
     "slug": {
       "type": "uid"
