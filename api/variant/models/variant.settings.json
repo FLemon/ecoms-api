@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "variants",
   "info": {
-    "name": "Variant"
+    "name": "Variant",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,11 +15,14 @@
       "type": "string"
     },
     "product_variant": {
-      "model": "product-variant",
-      "via": "variants"
+      "via": "variants",
+      "model": "product-variant"
     },
     "slug": {
       "type": "uid"
+    },
+    "name_cn": {
+      "type": "string"
     }
   }
 }

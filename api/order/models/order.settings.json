@@ -11,8 +11,8 @@
   },
   "attributes": {
     "customer": {
-      "model": "customer",
-      "via": "orders"
+      "via": "orders",
+      "model": "customer"
     },
     "stocks": {
       "collection": "stock"

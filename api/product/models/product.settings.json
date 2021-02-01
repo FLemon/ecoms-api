@@ -15,13 +15,13 @@
       "type": "uid"
     },
     "product_variants": {
-      "collection": "product-variant",
-      "via": "product"
+      "via": "product",
+      "collection": "product-variant"
     },
     "name_cn": {
       "type": "string"
     },
-    "name_en": {
+    "name": {
       "type": "string"
     },
     "images": {

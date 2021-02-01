@@ -12,8 +12,8 @@
   },
   "attributes": {
     "product_variants": {
-      "collection": "product-variant",
-      "via": "stock"
+      "via": "stock",
+      "collection": "product-variant"
     },
     "level": {
       "type": "integer"

@@ -15,22 +15,22 @@
       "type": "string"
     },
     "product": {
-      "via": "product_variants",
-      "model": "product"
+      "model": "product",
+      "via": "product_variants"
     },
     "slug": {
       "type": "uid"
     },
-    "name_en": {
+    "name": {
       "type": "string"
     },
     "stock": {
-      "via": "product_variants",
-      "model": "stock"
+      "model": "stock",
+      "via": "product_variants"
     },
     "variants": {
-      "via": "product_variant",
-      "collection": "variant"
+      "collection": "variant",
+      "via": "product_variant"
     }
   }
 }

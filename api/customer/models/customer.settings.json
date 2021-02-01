@@ -11,7 +11,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name_en": {
+    "name": {
       "type": "string"
     },
     "name_cn": {
@@ -42,8 +42,8 @@
       "type": "decimal"
     },
     "orders": {
-      "via": "customer",
-      "collection": "order"
+      "collection": "order",
+      "via": "customer"
     }
   }
 }
