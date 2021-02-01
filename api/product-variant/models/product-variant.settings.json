@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_variants",
+  "info": {
+    "name": "ProductVariant",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name_cn": {
+      "type": "string"
+    },
+    "product": {
+      "via": "product_variants",
+      "model": "product"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "stock": {
+      "via": "product_variants",
+      "model": "stock"
+    }
+  }
+}

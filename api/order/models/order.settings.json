@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "customer": {
+      "model": "customer",
+      "via": "orders"
+    },
+    "stocks": {
+      "collection": "stock"
+    },
+    "placed_at": {
+      "type": "datetime"
+    },
+    "paid_at": {
+      "type": "datetime"
+    }
+  }
+}

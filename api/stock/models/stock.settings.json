@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stocks",
+  "info": {
+    "name": "Stock",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "product_variants": {
+      "collection": "product-variant",
+      "via": "stock"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}
