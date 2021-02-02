@@ -42,17 +42,12 @@
       "required": false
     },
     "category": {
-      "via": "products",
-      "model": "category"
+      "model": "category",
+      "via": "products"
     },
     "product_variants": {
       "via": "product",
       "collection": "product-variant"
-    },
-    "limited": {
-      "type": "boolean",
-      "default": false,
-      "required": true
     }
   }
 }

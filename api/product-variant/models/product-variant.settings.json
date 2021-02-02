@@ -29,6 +29,11 @@
       "type": "integer",
       "default": 0,
       "required": true
+    },
+    "limited": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
