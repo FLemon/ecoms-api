@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/branches",
-      "handler": "branch.find",
+      "path": "/variant-types",
+      "handler": "variant-type.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/branches/count",
-      "handler": "branch.count",
+      "path": "/variant-types/count",
+      "handler": "variant-type.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/branches/:id",
-      "handler": "branch.findOne",
+      "path": "/variant-types/:id",
+      "handler": "variant-type.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/branches",
-      "handler": "branch.create",
+      "path": "/variant-types",
+      "handler": "variant-type.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/branches/:id",
-      "handler": "branch.update",
+      "path": "/variant-types/:id",
+      "handler": "variant-type.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/branches/:id",
-      "handler": "branch.delete",
+      "path": "/variant-types/:id",
+      "handler": "variant-type.delete",
       "config": {
         "policies": []
       }

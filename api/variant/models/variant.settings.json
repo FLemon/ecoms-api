@@ -11,15 +11,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "product_variant": {
-      "model": "product-variant",
-      "via": "variants"
-    },
     "slug": {
       "type": "uid"
     },
     "name_cn": {
       "type": "string"
+    },
+    "variant_type": {
+      "via": "variants",
+      "model": "variant-type"
     }
   }
 }

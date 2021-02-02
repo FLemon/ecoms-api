@@ -11,26 +11,24 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name_cn": {
-      "type": "string"
-    },
-    "product": {
-      "via": "product_variants",
-      "model": "product"
-    },
     "slug": {
       "type": "uid"
     },
-    "name": {
-      "type": "string"
-    },
-    "stock": {
-      "model": "stock",
+    "product": {
+      "model": "product",
       "via": "product_variants"
     },
     "variants": {
-      "via": "product_variant",
       "collection": "variant"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "stock": {
+      "type": "integer",
+      "default": 0,
+      "required": true
     }
   }
 }

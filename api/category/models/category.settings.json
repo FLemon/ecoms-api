@@ -12,13 +12,16 @@
   },
   "attributes": {
     "name_cn": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "required": true
     },
     "products": {
-      "collection": "product"
+      "collection": "product",
+      "via": "category"
     }
   }
 }

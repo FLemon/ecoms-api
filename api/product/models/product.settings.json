@@ -12,14 +12,12 @@
   },
   "attributes": {
     "slug": {
-      "type": "uid"
-    },
-    "product_variants": {
-      "collection": "product-variant",
-      "via": "product"
+      "type": "uid",
+      "required": true
     },
     "name_cn": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "images": {
       "collection": "file",
@@ -42,6 +40,19 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "category": {
+      "via": "products",
+      "model": "category"
+    },
+    "product_variants": {
+      "via": "product",
+      "collection": "product-variant"
+    },
+    "limited": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
