@@ -15,15 +15,15 @@
       "type": "uid"
     },
     "product": {
-      "via": "product_variants",
-      "model": "product"
+      "model": "product",
+      "via": "product_variants"
     },
     "variants": {
       "collection": "variant"
     },
     "price_in_china": {
       "type": "decimal",
-      "required": true
+      "required": false
     },
     "stock": {
       "type": "integer",
