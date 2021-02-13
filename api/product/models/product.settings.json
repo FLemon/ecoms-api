@@ -46,8 +46,8 @@
       "via": "products"
     },
     "product_variants": {
-      "collection": "product-variant",
-      "via": "product"
+      "via": "product",
+      "collection": "product-variant"
     },
     "cyn_in_china": {
       "type": "decimal"

@@ -15,8 +15,8 @@
       "type": "uid"
     },
     "product": {
-      "via": "product_variants",
-      "model": "product"
+      "model": "product",
+      "via": "product_variants"
     },
     "variants": {
       "collection": "variant"
@@ -28,12 +28,12 @@
     "stock_level": {
       "type": "integer",
       "default": 0,
-      "required": true
+      "required": false
     },
     "limited_edition": {
       "type": "boolean",
       "default": false,
-      "required": true
+      "required": false
     },
     "cyn_in_uk": {
       "type": "decimal"
