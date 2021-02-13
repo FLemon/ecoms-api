@@ -46,13 +46,19 @@
       "via": "products"
     },
     "product_variants": {
-      "via": "product",
-      "collection": "product-variant"
+      "collection": "product-variant",
+      "via": "product"
     },
-    "price_in_china": {
+    "cyn_in_china": {
       "type": "decimal"
     },
-    "price_in_uk": {
+    "cyn_in_uk": {
+      "type": "decimal"
+    },
+    "gbp_in_china": {
+      "type": "decimal"
+    },
+    "gbp_in_uk": {
       "type": "decimal"
     }
   }
