@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_stocks",
+  "info": {
+    "name": "productStock",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "size": {
+      "model": "size",
+      "via": "product_stocks"
+    },
+    "colour": {
+      "model": "colour",
+      "via": "product_stocks"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "orders": {
+      "via": "product_stock",
+      "collection": "order"
+    }
+  }
+}

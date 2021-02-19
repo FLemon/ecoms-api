@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/variant-types",
-      "handler": "variant-type.find",
+      "path": "/product-stocks",
+      "handler": "product-stock.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/variant-types/count",
-      "handler": "variant-type.count",
+      "path": "/product-stocks/count",
+      "handler": "product-stock.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/variant-types/:id",
-      "handler": "variant-type.findOne",
+      "path": "/product-stocks/:id",
+      "handler": "product-stock.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/variant-types",
-      "handler": "variant-type.create",
+      "path": "/product-stocks",
+      "handler": "product-stock.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/variant-types/:id",
-      "handler": "variant-type.update",
+      "path": "/product-stocks/:id",
+      "handler": "product-stock.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/variant-types/:id",
-      "handler": "variant-type.delete",
+      "path": "/product-stocks/:id",
+      "handler": "product-stock.delete",
       "config": {
         "policies": []
       }

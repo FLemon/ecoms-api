@@ -18,16 +18,8 @@
       "model": "product",
       "via": "product_variants"
     },
-    "variants": {
-      "collection": "variant"
-    },
     "cyn_in_china": {
       "type": "decimal",
-      "required": false
-    },
-    "stock_level": {
-      "type": "integer",
-      "default": 0,
       "required": false
     },
     "limited_edition": {
@@ -54,6 +46,10 @@
     },
     "gbp_in_uk": {
       "type": "decimal"
+    },
+    "colour": {
+      "model": "colour",
+      "via": "product_variants"
     }
   }
 }

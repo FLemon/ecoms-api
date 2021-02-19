@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colours",
+  "info": {
+    "name": "colour"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "name_cn": {
+      "type": "string"
+    },
+    "product_variants": {
+      "via": "colour",
+      "collection": "product-variant"
+    },
+    "product_stocks": {
+      "via": "colour",
+      "collection": "product-stock"
+    }
+  }
+}

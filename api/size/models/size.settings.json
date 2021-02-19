@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "variants",
+  "collectionName": "sizes",
   "info": {
-    "name": "Variant",
-    "description": ""
+    "name": "size"
   },
   "options": {
     "increments": true,
@@ -12,14 +11,14 @@
   },
   "attributes": {
     "slug": {
-      "type": "uid"
+      "type": "string"
     },
     "name_cn": {
       "type": "string"
     },
-    "variant_type": {
-      "via": "variants",
-      "model": "variant-type"
+    "product_stocks": {
+      "via": "size",
+      "collection": "product-stock"
     }
   }
 }
