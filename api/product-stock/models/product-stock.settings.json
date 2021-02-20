@@ -15,15 +15,11 @@
       "model": "size",
       "via": "product_stocks"
     },
-    "colour": {
-      "model": "colour",
-      "via": "product_stocks"
-    },
     "quantity": {
       "type": "integer"
     },
-    "product": {
-      "model": "product",
+    "product_variant": {
+      "model": "product-variant",
       "via": "product_stocks"
     }
   }

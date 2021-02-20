@@ -50,6 +50,10 @@
     "colour": {
       "model": "colour",
       "via": "product_variants"
+    },
+    "product_stocks": {
+      "via": "product_variant",
+      "collection": "product-stock"
     }
   }
 }
