@@ -21,6 +21,9 @@
     "product_variant": {
       "model": "product-variant",
       "via": "product_stocks"
+    },
+    "sku": {
+      "type": "uid"
     }
   }
 }
