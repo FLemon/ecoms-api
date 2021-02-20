@@ -22,9 +22,9 @@
     "quantity": {
       "type": "integer"
     },
-    "orders": {
-      "via": "product_stock",
-      "collection": "order"
+    "product": {
+      "model": "product",
+      "via": "product_stocks"
     }
   }
 }

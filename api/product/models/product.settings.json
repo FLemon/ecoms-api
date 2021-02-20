@@ -60,6 +60,10 @@
     },
     "gbp_in_uk": {
       "type": "decimal"
+    },
+    "product_stocks": {
+      "via": "product",
+      "collection": "product-stock"
     }
   }
 }

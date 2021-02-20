@@ -20,10 +20,6 @@
     "customer": {
       "model": "customer",
       "via": "orders"
-    },
-    "product_stock": {
-      "model": "product-stock",
-      "via": "orders"
     }
   }
 }
