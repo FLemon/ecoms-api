@@ -51,9 +51,23 @@
       "model": "colour",
       "via": "product_variants"
     },
-    "product_stocks": {
-      "via": "product_variant",
-      "collection": "product-stock"
+    "s": {
+      "type": "integer"
+    },
+    "m": {
+      "type": "integer"
+    },
+    "l": {
+      "type": "integer"
+    },
+    "xl": {
+      "type": "integer"
+    },
+    "xxl": {
+      "type": "integer"
+    },
+    "xxxl": {
+      "type": "integer"
     }
   }
 }
