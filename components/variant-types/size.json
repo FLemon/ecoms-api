@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_variant_types_sizes",
+  "info": {
+    "name": "size",
+    "icon": "ruler-combined"
+  },
+  "options": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer"
+    }
+  }
+}

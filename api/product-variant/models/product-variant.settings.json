@@ -68,6 +68,11 @@
     },
     "xxxl": {
       "type": "integer"
+    },
+    "size": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variant-types.size"
     }
   }
 }
