@@ -20,8 +20,11 @@
       "required": true
     },
     "products": {
-      "via": "category",
-      "collection": "product"
+      "collection": "product",
+      "via": "category"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

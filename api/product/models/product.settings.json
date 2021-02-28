@@ -42,12 +42,12 @@
       "required": false
     },
     "category": {
-      "model": "category",
-      "via": "products"
+      "via": "products",
+      "model": "category"
     },
     "product_variants": {
-      "collection": "product-variant",
-      "via": "product"
+      "via": "product",
+      "collection": "product-variant"
     },
     "cyn_in_china": {
       "type": "decimal"

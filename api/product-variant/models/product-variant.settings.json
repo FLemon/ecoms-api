@@ -15,8 +15,8 @@
       "type": "uid"
     },
     "product": {
-      "via": "product_variants",
-      "model": "product"
+      "model": "product",
+      "via": "product_variants"
     },
     "cyn_in_china": {
       "type": "decimal",
@@ -55,6 +55,9 @@
       "type": "component",
       "repeatable": true,
       "component": "variant-stock.size"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
