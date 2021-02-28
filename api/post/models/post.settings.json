@@ -11,13 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "paragraphs": {
-      "type": "component",
-      "repeatable": true,
-      "component": "content-block.paragraphs"
-    },
     "slug": {
       "type": "uid"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }
