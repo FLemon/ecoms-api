@@ -15,8 +15,8 @@
       "type": "uid"
     },
     "product": {
-      "model": "product",
-      "via": "product_variants"
+      "via": "product_variants",
+      "model": "product"
     },
     "cyn_in_china": {
       "type": "decimal",
@@ -51,28 +51,10 @@
       "model": "colour",
       "via": "product_variants"
     },
-    "s": {
-      "type": "integer"
-    },
-    "m": {
-      "type": "integer"
-    },
-    "l": {
-      "type": "integer"
-    },
-    "xl": {
-      "type": "integer"
-    },
-    "xxl": {
-      "type": "integer"
-    },
-    "xxxl": {
-      "type": "integer"
-    },
-    "size": {
+    "sizes": {
       "type": "component",
       "repeatable": true,
-      "component": "variant-types.size"
+      "component": "variant-stock.size"
     }
   }
 }

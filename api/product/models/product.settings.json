@@ -46,8 +46,8 @@
       "via": "products"
     },
     "product_variants": {
-      "via": "product",
-      "collection": "product-variant"
+      "collection": "product-variant",
+      "via": "product"
     },
     "cyn_in_china": {
       "type": "decimal"
@@ -60,6 +60,12 @@
     },
     "gbp_in_uk": {
       "type": "decimal"
+    },
+    "size_guide": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
