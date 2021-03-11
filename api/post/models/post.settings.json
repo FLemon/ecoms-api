@@ -14,8 +14,10 @@
     "slug": {
       "type": "uid"
     },
-    "content": {
-      "type": "richtext"
+    "section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "paragraph.section"
     }
   }
 }
