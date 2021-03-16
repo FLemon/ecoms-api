@@ -5,6 +5,7 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'postgres',
+        uri: process.env.DATABASE_URL || ''
         host: process.env.DATABASE_HOST || 'db',
         port: process.env.DATABASE_PORT || 5432,
         database: process.env.DATABASE_NAME || 'strapi',
