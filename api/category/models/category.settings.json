@@ -20,14 +20,25 @@
       "required": true
     },
     "products": {
-      "collection": "product",
-      "via": "category"
+      "via": "category",
+      "collection": "product"
     },
     "description": {
       "type": "richtext"
     },
     "order": {
       "type": "integer"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

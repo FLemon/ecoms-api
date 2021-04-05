@@ -11,7 +11,7 @@ module.exports = ({ env }) => ({
         database: process.env.DATABASE_NAME || 'strapi',
         username: process.env.DATABASE_USERNAME || 'strapi',
         password: process.env.DATABASE_PASSWORD || 'strapi',
-        ssl: { "rejectUnauthorized": false },
+        ssl: false //{ "rejectUnauthorized": false },
       },
       options: {}
     },
