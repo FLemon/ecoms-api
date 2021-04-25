@@ -12,17 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "slug": {
-      "type": "string",
-      "pluginOptions": {}
-    },
     "name": {
       "type": "string",
       "pluginOptions": {}
     },
     "product_variants": {
-      "via": "colour",
-      "collection": "product-variant"
+      "collection": "product-variant",
+      "via": "colour"
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }
