@@ -22,6 +22,9 @@
     },
     "slug": {
       "type": "uid"
+    },
+    "hex": {
+      "type": "string"
     }
   }
 }
