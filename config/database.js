@@ -1,16 +1,6 @@
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
-    pool: {
-      min: 2,
-      max: 6,
-      createTimeoutMillis: 3000,
-      acquireTimeoutMillis: 30000,
-      idleTimeoutMillis: 30000,
-      reapIntervalMillis: 1000,
-      createRetryIntervalMillis: 100,
-      propagateCreateError: false // <- default is true, set to false
-    },
     default: {
       connector: 'bookshelf',
       settings: {
@@ -23,7 +13,18 @@ module.exports = ({ env }) => ({
         password: process.env.DATABASE_PASSWORD || 'strapi',
         ssl: process.env.NODE_ENV === 'production' ? { "rejectUnauthorized": false } : false,
       },
-      options: {}
+      options: {
+        pool: {
+          min: 0,
+          max: 10,
+          createTimeoutMillis: 3000,
+          acquireTimeoutMillis: 30000,
+          idleTimeoutMillis: 30000,
+          reapIntervalMillis: 1000,
+          createRetryIntervalMillis: 100,
+          propagateCreateError: false // <- default is true, set to false
+        },
+      }
     },
   },
 });
